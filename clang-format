@@ -1,0 +1,20 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+
+BreakBeforeBraces: Custom
+
+BraceWrapping:
+  AfterControlStatement: false
+  BeforeElse: true
+
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortBlocksOnASingleLine: false
+
+ColumnLimit: 0
+
+BreakBeforeBinaryOperators: None
+
+PenaltyBreakBeforeFirstCallParameter: 1000
+PenaltyBreakString: 1000
+PenaltyBreakAssignment: 1000
