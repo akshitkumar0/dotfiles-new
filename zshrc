@@ -38,4 +38,9 @@ run() {
   g++ "$1" -o "${1%.cpp}" && "./${1%.cpp}"
 }
 
+# start ssh-agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval "$(ssh-agent -s)"
+fi
+
 export PATH=$HOME/.local/bin:$PATH
